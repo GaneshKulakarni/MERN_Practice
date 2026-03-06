@@ -7,10 +7,14 @@
 </head>
 <body>
     <h1>Register Form</h1>
-    <form action="/register">
+    <form action="/register" method="POST">
         <p><input type="Name" placeholder="name"></p>
         <p><input type="email" placeholder="email"></p>
-        <p><input type="password" placeholder="password"></p>
+        <p><input type="password" placeholder="password" required></p>
+        <button type="submit">Submit</button>
+        <p>
+            Already have an account? <a href="/login">Login here</a>
+        </p>
     </form>
 </body>
 </html>
